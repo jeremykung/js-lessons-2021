@@ -60,10 +60,21 @@ const multiply = () => {
 }
 
 
-// setInterval()
+// setInterval(function, delay)
+// repeats a function every 'delay' milliseconds
 
+// This function calls the 'hiClass()' function every 1 second
+setInterval(hiClass, 1000)
+
+// To stop a setInterval(), we need to store it in a variable
 const repeatHiClass = setInterval(hiClass, 1000)
 
+// We then use the clearInterval(intervalName) function to stop it
+clearInterval(repeatHiClass) // this stops repeatHiClass
+
+
+// Sometimes people define the function in the argument itself
+// We call these "Anonymous Functions" be cause they don't have a name
 setInterval(() => {
     console.log('hello')
 }, 2000)
