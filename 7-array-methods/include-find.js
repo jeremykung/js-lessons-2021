@@ -96,3 +96,22 @@ Create an array with 7 random friends
 
 */
 
+// Solution:
+
+const friends = [
+    {gender: "male", age: 31, mbti: "ENFJ"},
+    {gender: "female", age: 25, mbti: "INTP"},
+    {gender: "male", age: 32, mbti: "INFJ"},
+    {gender: "female", age: 18, mbti: "ESFJ"},
+    {gender: "male", age: 35, mbti: "ESTP"},
+    {gender: "male", age: 28, mbti: "ISFP"},
+    {gender: "male", age: 30, mbti: "INTJ"},
+]
+
+console.log(friends.find((object)=>{
+    return object.gender == "female" && object.age == 18
+}));
+
+console.log(friends.includes((object)=>{
+    return object.gender == "male" && object.mbti == "ENFP"
+}));
