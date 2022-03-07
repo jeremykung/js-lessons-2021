@@ -9,7 +9,7 @@ Example:
 An array of [4, 58, 21]
 Return value: 83
 
-Create a second function that subtracts all the elements from a passed value
+Create a second function that subtracts all the elements from a passed in value
 
 1. Your function should accept 2 arguments
     - First argument is an array
