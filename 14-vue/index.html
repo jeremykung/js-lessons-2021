@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@3"></script>
+    <title>Vue</title>
+</head>
+<body>
+
+    <div id="app">
+        <h1>The score is: {{ score }}</h1>
+        <button v-on:click="score = score + 1">plus 1</button>
+        <button @click="score--">minus 1</button>
+        <button @click="logSomething('hello')">say</button>
+        <button @click="deleteStudent">Delete Student</button>
+
+        <p @mouseover="handleEvent" style="padding: 20px">Events!</p>
+
+        <h2 v-if="youWin">You Win!!</h2>
+
+        <div v-for="student in students">
+            <p>{{ student.name }} - {{ student.age }}</p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
