@@ -14,8 +14,8 @@
 
         <!-- Adding Event Listeners -->
         <button v-on:click="score++">Add</button>
-        <button @click="score++">Add</button>
-        <p @mouseover="handleEvent">Vue Event</p>
+        <button v-on:click="score++">Add</button>
+        <p v-on:mouseover="handleEvent">Vue Event</p>
 
         <!-- Conditional Rendering -->
         <h1 v-if="showSecret">Secret Message</h1>
